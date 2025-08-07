@@ -1,5 +1,6 @@
 # Node dependencies
 node_modules/
+
 # Sensitive environment variables
 .env
 
@@ -9,4 +10,5 @@ logs
 
 # OS & editor files
 .DS_Store
+
 .vscode/
