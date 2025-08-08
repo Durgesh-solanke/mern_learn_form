@@ -2,6 +2,9 @@ import mongoose from "mongoose";
 import express from "express"
 import bodyParser from "body-parser";
 const app = express();
+import cors from "cors"
+
+app.use(cors())
 
 import route from "./routes/userRoutes.js";
 
@@ -18,20 +21,6 @@ mongoose.connect("mongodb://localhost:27017/arjun")
 
 
 app.use('/api', route);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 app.listen(5000, () => {
     console.log("server is on 5000")
